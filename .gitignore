@@ -1,3 +1,14 @@
+# --- Secrets & Config ---
+.env
+*.pem
+*.key
+kubeconfig*
+
+# --- Helm ---
+# Ignore dependencies downloaded by helm dependency update
+**/charts/
+**/Chart.lock
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

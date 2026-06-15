@@ -1,0 +1,17 @@
+# Default values for debate-admin-chart.
+
+replicaCount: 1
+
+image:
+  repository: ghcr.io/pangrant/debate-admin
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  host: debate-admin.local
+  path: /
